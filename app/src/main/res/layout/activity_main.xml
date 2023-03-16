@@ -123,8 +123,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/preco_kwh"
+        android:inputType="number"
         android:maxLength="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -140,6 +140,18 @@
         app:layout_constraintEnd_toEndOf="@id/et_preco_kwh"
         app:layout_constraintStart_toStartOf="@id/et_preco_kwh"
         app:layout_constraintTop_toBottomOf="@+id/et_preco_kwh" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="@+id/et_km_percorrido"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_km_percorrido"
+        app:layout_constraintTop_toBottomOf="@+id/et_km_percorrido" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
