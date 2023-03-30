@@ -160,7 +160,7 @@
         android:id="@+id/tv_selecione_comida_favorita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Selecione a comida favorita"
         app:layout_constraintStart_toStartOf="@id/btn_calcular"
         app:layout_constraintTop_toBottomOf="@id/btn_calcular" />
@@ -192,7 +192,6 @@
         android:id="@+id/cb_compromisso_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Meu compromisso 1"
         app:layout_constraintStart_toStartOf="parent"
@@ -202,11 +201,19 @@
         android:id="@+id/cb_compromisso_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="Meu compromisso 2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cb_compromisso_1" />
+
+    <Switch
+        android:id="@+id/s_lampada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Ligar lâmpada"
+        app:layout_constraintStart_toStartOf="@id/cb_compromisso_1"
+        app:layout_constraintTop_toBottomOf="@id/cb_compromisso_2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
