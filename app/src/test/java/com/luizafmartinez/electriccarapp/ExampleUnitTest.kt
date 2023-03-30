@@ -1,4 +1,4 @@
-package br.com.luizafmartinez.electriccarapp
+package com.luizafmartinez.electriccarapp
 
 import org.junit.Test
 

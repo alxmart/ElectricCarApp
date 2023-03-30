@@ -1,13 +1,3 @@
 <resources>
-    <string name="app_name">ElectricCarApp</string>
-    <string name="title">Electric Car</string>
-    <string name="carros">Carros</string>
-    <string name="favoritos">Favoritos</string>
-    <string name="preco">Preço</string>
-    <string name="bateria">Bateria</string>
-    <string name="potencia">Potência</string>
-    <string name="recarga">Recarga</string>
-    <string name="preco_kwh">Preço KW/h</string>
-    <string name="km_percorrido">Km percorrido</string>
-    <string name="calcular">Calcular</string>
+    <string name="app_name">Electric Car App</string>
 </resources>
