@@ -169,9 +169,10 @@
         android:id="@+id/rg_comida_favorita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@id/btn_calcular"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_selecione_comida_favorita">
 
         <RadioButton
@@ -186,6 +187,26 @@
             android:layout_height="wrap_content"
             android:text="Hamburguer" />
     </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_compromisso_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Meu compromisso 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_comida_favorita" />
+
+    <CheckBox
+        android:id="@+id/cb_compromisso_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Meu compromisso 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_compromisso_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
