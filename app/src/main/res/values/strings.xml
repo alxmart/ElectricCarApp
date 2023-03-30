@@ -11,9 +11,9 @@
     <string name="km_percorrido">Km Percorrido</string>
     <string name="calcular">Calcular</string>
     <string-array name="array_cidades">
-        <item>Araraquara</item>
-        <item>Taquaringa</item>
-        <item>São Paulo</item>
-        <item>Salvador</item>
+        <item>London</item>
+        <item>Dublin</item>
+        <item>Edinburgh</item>
+        <item>Belfast</item>
     </string-array>
 </resources>
