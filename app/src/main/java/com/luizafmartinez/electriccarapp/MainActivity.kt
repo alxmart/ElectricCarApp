@@ -26,11 +26,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         setupView()
         setupListener()
     }
-
     fun setupView() {
         preco = findViewById<EditText>(R.id.et_preco_kwh)
         kmPercorrido = findViewById(R.id.et_km_percorrido)
@@ -40,19 +38,15 @@ class MainActivity : AppCompatActivity() {
 //        checkBox1 = findViewById<CheckBox>(R.id.cb_compromisso_1)
 //        checkBox2 = findViewById<CheckBox>(R.id.cb_compromisso_2)
 //        switch = findViewById<Switch>(R.id.s_lampada)
-
     }
 
     fun setupListener() {
 
         btnCalcular.setOnClickListener {
-
             calcular()
-
             /*
             val textoDitado = preco.text.toString()
-
-             Log.d("texto digitado ->", textoDitado)
+            Log.d("texto digitado ->", textoDitado)
         }
 
         if(checkBox1.isChecked) {
@@ -66,12 +60,10 @@ class MainActivity : AppCompatActivity() {
         } else {
             Log.d("compromisso","2 não foi feito")
         }
-
             radioGrupo.setOnCheckedChangeListener { radioGroup: RadioGroup, checkedId: Int ->
                 val radio = findViewById<RadioButton>(checkedId)
                 Log.d("Opção Selecionada:", radio.text.toString())
             }
-
             switch.setOnCheckedChangeListener { compoundButton: CompoundButton, isChecked: Boolean ->
                 if (isChecked) {
                     Log.d("Interruptor:", "Ligado ${isChecked}")
@@ -79,10 +71,7 @@ class MainActivity : AppCompatActivity() {
                     Log.d("Interruptor:", "Ligado ${isChecked}")
                 }
             }
-
-
              */
-
         }
     }
 
@@ -98,8 +87,6 @@ class MainActivity : AppCompatActivity() {
 //        Log.d("Km Percorrido: ", km.toString())
 //        Log.d("Resultado: ", resultado.toString())
     }
-
-
 }
 
 
