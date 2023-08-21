@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setupView()
         setupListener()
     }
+
     fun setupView() {
         preco = findViewById<EditText>(R.id.et_preco_kwh)
         kmPercorrido = findViewById(R.id.et_km_percorrido)
