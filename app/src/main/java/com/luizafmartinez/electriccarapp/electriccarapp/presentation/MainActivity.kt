@@ -1,5 +1,6 @@
-package com.luizafmartinez.electriccarapp.presentation
+package com.luizafmartinez.electriccarapp.electriccarapp.presentation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,15 +24,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setupView() {
-        preco = findViewById<EditText>(R.id.et_preco_kwh)
-        kmPercorrido = findViewById(R.id.et_km_percorrido)
-        resultado = findViewById(R.id.tv_resultado)
-        btnCalcular = findViewById<Button>(R.id.btn_calcular)
+//        preco = findViewById<EditText>(R.id.et_preco_kwh)
+//        kmPercorrido = findViewById(R.id.et_km_percorrido)
+//        resultado = findViewById(R.id.tv_resultado)
+//        btnCalcular = findViewById<Button>(R.id.btn_calcular)
+          btnCalcular = findViewById(R.id.btn_calcular)
     }
 
     fun setupListener() {
         btnCalcular.setOnClickListener {
-            calcular()
+            //calcular()
+            val intent = Intent(
+                this,
+                CalcularAutonomiaActivity::class.java
+            )
+            startActivity(intent)
         }
     }
 
