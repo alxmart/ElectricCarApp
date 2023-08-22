@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.luizafmartinez.electriccarapp.R
@@ -14,6 +15,7 @@ class CalcularAutonomiaActivity : AppCompatActivity() {
     lateinit var kmPercorrido: EditText
     lateinit var resultado: TextView
     lateinit var btnCalcular: Button
+    lateinit var btnClose: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,11 +29,16 @@ class CalcularAutonomiaActivity : AppCompatActivity() {
         kmPercorrido = findViewById(R.id.et_km_percorrido)
         resultado = findViewById(R.id.tv_resultado)
         btnCalcular = findViewById(R.id.btn_calcular)
+        btnClose =findViewById(R.id.iv_close)
     }
 
     fun setupListener() {
         btnCalcular.setOnClickListener {
             calcular()
+        }
+
+        btnClose.setOnClickListener {
+            finish()
         }
     }
 

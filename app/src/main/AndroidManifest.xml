@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ElectricCarApp"
+        android:theme="@style/Base.Theme.ElectricCarApp"
         tools:targetApi="31">
         <activity
             android:name=".electriccarapp.presentation.MainActivity"
@@ -22,6 +22,7 @@
         </activity>
         <activity
             android:name=".electriccarapp.presentation.CalcularAutonomiaActivity"
+            android:theme="@style/Base.Theme.ElectricCarApp"
             android:exported="false" />
     </application>
 
