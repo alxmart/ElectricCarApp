@@ -20,6 +20,7 @@ class CalcularAutonomiaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calcular_autonomia)
+
         setupView()
         setupListener()
     }
@@ -29,7 +30,7 @@ class CalcularAutonomiaActivity : AppCompatActivity() {
         kmPercorrido = findViewById(R.id.et_km_percorrido)
         resultado = findViewById(R.id.tv_resultado)
         btnCalcular = findViewById(R.id.btn_calcular)
-        btnClose =findViewById(R.id.iv_close)
+        btnClose = findViewById(R.id.iv_close)
     }
 
     fun setupListener() {
@@ -48,11 +49,6 @@ class CalcularAutonomiaActivity : AppCompatActivity() {
         val result = preco / km
         resultado.text = result.toString()
     }
-
-
-
-
-
 
 
 }
