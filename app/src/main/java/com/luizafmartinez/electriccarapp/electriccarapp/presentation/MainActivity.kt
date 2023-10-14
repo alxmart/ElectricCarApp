@@ -17,13 +17,26 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         setupView()
         setupListener()
+        setupList()
     }
 
     fun setupView() {
         btnCalcular = findViewById(R.id.btn_calcular)
+        lista = findViewById(R.id.lv_informacoes)
+    }
+
+    fun setupList() {
+        var dados = arrayOf(
+            "Cupcake",
+            "Donut",
+            "Froyo",
+            "Gingerbread",
+            "Honeycomb",
+            "Ice Cream Sandwich",
+            "Jelly Bean"
+        )
     }
 
     fun setupListener() {
