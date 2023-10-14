@@ -28,14 +28,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setupView() {
-
         btnCalcular = findViewById(R.id.btn_calcular)
-
         listaCarros = findViewById(R.id.rv_lista_carros)
     }
 
     fun setupList() {
-
         var dados = arrayOf(
             "Cupcake",
             "Donut",
